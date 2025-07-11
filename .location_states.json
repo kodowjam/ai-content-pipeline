@@ -1,0 +1,15 @@
+{
+  "Discovery Park July 9": {
+    "file_hash": "62dbff862d27ddce35af3c77e73049c9",
+    "last_combined": "2025-07-10T21:29:34.669852",
+    "combined_file": "processed_by_smart_pipeline",
+    "transcript_count": "unknown"
+  },
+  "last_updated": "2025-07-10T21:51:39.771188",
+  "Mt Washington": {
+    "file_hash": "0fa5594c49d7424d3d0068892cad3b68",
+    "last_combined": "2025-07-10T21:39:36.450642",
+    "combined_file": "processed_by_smart_pipeline",
+    "transcript_count": "unknown"
+  }
+}

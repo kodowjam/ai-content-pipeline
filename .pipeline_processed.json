@@ -1,0 +1,23 @@
+{
+  "processed_files": {
+    "combined_Discovery_Park_July_9.json": {
+      "hash": "389cb7dc6b89e4a87be55d4a09710830",
+      "processed_at": "2025-07-10T21:29:34.669852",
+      "location": "Discovery Park July 9",
+      "doc_url": "https://docs.google.com/document/d/11PAYdvixLVdlHY4-YwoIA44rOQXUNYkevq63H65ECB4/edit"
+    },
+    "combined_Mt_Washington_20250710_213910.json": {
+      "hash": "3affa7549ba31dc4bb83c1dd3cdd347d",
+      "processed_at": "2025-07-10T21:39:36.450642",
+      "location": "Mt Washington",
+      "doc_url": "https://docs.google.com/document/d/1HZIdkHoVxp6Cgbf-Otwrdz0gTo7uvK1pZlPn5zC38q0/edit"
+    },
+    "combined_Discovery_Park_July_9_20250710_213910.json": {
+      "hash": "87ab85e09359f290f2586c10d3643a96",
+      "processed_at": "2025-07-10T21:40:01.123776",
+      "location": "Discovery Park July 9",
+      "doc_url": "https://docs.google.com/document/d/1anjnLwneuiwFyxPC3DDd00LueNGOJ73pLPLWXDYfsjM/edit"
+    }
+  },
+  "last_run": "2025-07-10T21:40:01.123851"
+}
