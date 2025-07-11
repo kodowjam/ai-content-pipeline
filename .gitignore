@@ -1,0 +1,11 @@
+
+# Additional security (explicit blocks)
+*.json
+!requirements.txt
+!package.json
+*.pickle
+*.token
+*.key
+*.pem
+.env*
+!.env.example
