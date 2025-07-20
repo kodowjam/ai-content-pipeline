@@ -404,4 +404,8 @@ For questions, issues, or feature requests:
 
 **Built with ❤️ for automated content creation**
 
+<<<<<<< HEAD
 Transform your video content into professional blog posts with the power of AI automation.
+=======
+Transform your video content into professional blog posts with the power of AI automation.
+>>>>>>> eea0972 (🔧 Fix Google OAuth token refresh issues and improve automation)

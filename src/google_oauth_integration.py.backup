@@ -23,51 +23,32 @@ class GoogleOAuthIntegration:
         self.sheets_service = build('sheets', 'v4', credentials=self.credentials)
     
     def _get_credentials(self):
-        """Get OAuth credentials, with fresh login if needed"""
+        """Get OAuth credentials, with login flow if needed"""
         creds = None
-        token_file = 'config/token.pickle'
+        token_file = '../config/token.pickle'
         
-        # Try to load existing credentials
+        # Check if we have stored credentials
         if os.path.exists(token_file):
-            try:
-                with open(token_file, 'rb') as token:
-                    creds = pickle.load(token)
-            except Exception as e:
-                print(f'Error loading credentials: {e}')
-                creds = None
+            with open(token_file, 'rb') as token:
+                creds = pickle.load(token)
         
-        # Test if credentials work by making a simple API call
-        if creds:
-            try:
-                # Quick test to see if credentials are actually valid
-                test_service = build('drive', 'v3', credentials=creds)
-                test_service.files().list(pageSize=1).execute()
-                print('✅ Existing credentials are valid')
-                return creds
-            except Exception as e:
-                print(f'Credentials test failed: {e}. Starting fresh OAuth...')
-                creds = None
-        
-        # If we get here, we need fresh OAuth
-        print('Starting OAuth login flow...')
-        creds_path = os.environ.get('GOOGLE_OAUTH_CREDENTIALS_PATH')
-        flow = InstalledAppFlow.from_client_secrets_file(creds_path, self.SCOPES)
-        creds = flow.run_local_server(
-            port=8080, 
-            prompt='consent',
-            open_browser=True
-        )
-        
-        # Save the fresh credentials
-        try:
-            os.makedirs('config', exist_ok=True)
+        # If no valid credentials, run OAuth flow
+        if not creds or not creds.valid:
+            if creds and creds.expired and creds.refresh_token:
+                print("Refreshing expired credentials...")
+                creds.refresh(Request())
+            else:
+                print("Starting OAuth login flow...")
+                creds_path = os.environ.get("GOOGLE_OAUTH_CREDENTIALS_PATH")
+                flow = InstalledAppFlow.from_client_secrets_file(creds_path, self.SCOPES)
+                creds = flow.run_local_server(port=0)
+            
+            # Save credentials for next time
             with open(token_file, 'wb') as token:
                 pickle.dump(creds, token)
-            print('✅ Fresh credentials saved')
-        except Exception as e:
-            print(f'Warning: Could not save credentials: {e}')
         
         return creds
+    
     def create_blog_doc(self, blog_data):
         """Create a Google Doc from blog data"""
         

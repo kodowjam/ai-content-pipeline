@@ -26,4 +26,8 @@ ujson>=5.0.0
 # Development and testing (optional)
 pytest>=7.0.0
 black>=22.0.0
+<<<<<<< HEAD
 flake8>=5.0.0
+=======
+flake8>=5.0.0
+>>>>>>> eea0972 (🔧 Fix Google OAuth token refresh issues and improve automation)

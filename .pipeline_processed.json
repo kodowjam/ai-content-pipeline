@@ -17,7 +17,19 @@
       "processed_at": "2025-07-10T21:40:01.123776",
       "location": "Discovery Park July 9",
       "doc_url": "https://docs.google.com/document/d/1anjnLwneuiwFyxPC3DDd00LueNGOJ73pLPLWXDYfsjM/edit"
+    },
+    "combined_Granite_Lake_July_14_20250715_154209.json": {
+      "hash": "a0c7bf88ac6c5316b8cd3eba231f58b4",
+      "processed_at": "2025-07-15T15:42:36.760011",
+      "location": "Granite Lake July 14 20250715 154209",
+      "doc_url": "https://docs.google.com/document/d/1w2E8UQ_A2OREkXGZzuPkVZmBwfD0Uq-SeB3dAuWBgNo/edit"
+    },
+    "combined_Annette_Lake_July_16_20250720_112033.json": {
+      "hash": "1d18a13cccfb5f7efe393e355a921234",
+      "processed_at": "2025-07-20T12:52:29.564726",
+      "location": "Annette Lake July 16 20250720 112033",
+      "doc_url": "https://docs.google.com/document/d/1B3SeS3C9Og9tvrFY03Q5A3zEcaS5WCE2ZnzHJ_CmZ0Q/edit"
     }
   },
-  "last_run": "2025-07-10T21:40:01.123851"
+  "last_run": "2025-07-20T12:52:29.564763"
 }

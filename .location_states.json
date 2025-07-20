@@ -5,11 +5,23 @@
     "combined_file": "processed_by_smart_pipeline",
     "transcript_count": "unknown"
   },
-  "last_updated": "2025-07-10T21:51:39.771188",
+  "last_updated": "2025-07-20T11:20:33.987053",
   "Mt Washington": {
     "file_hash": "0fa5594c49d7424d3d0068892cad3b68",
     "last_combined": "2025-07-10T21:39:36.450642",
     "combined_file": "processed_by_smart_pipeline",
     "transcript_count": "unknown"
+  },
+  "Granite Lake July 14": {
+    "file_hash": "3749373118e402dc968b021d77978e91",
+    "last_combined": "2025-07-15T15:42:36.760011",
+    "combined_file": "processed_by_smart_pipeline",
+    "transcript_count": "unknown"
+  },
+  "Annette Lake July 16": {
+    "file_hash": "6375bf07cc8b2804dafd892342d97122",
+    "last_combined": "2025-07-20T11:20:33.979341",
+    "combined_file": "Input/transcripts/combined_Annette_Lake_July_16_20250720_112033.json",
+    "transcript_count": 16
   }
 }
